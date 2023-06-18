@@ -38,16 +38,26 @@ class MainActivity4 : AppCompatActivity() {
 
             else {
                 level = 1
-                againButton.setText("Play Again")
+                againButton.setText("Return to Main Menu")
             }
         }
 
         val actButton = findViewById<Button>(R.id.playAgain)
         actButton.setOnClickListener{
-            val Intent = Intent(this, MainActivity2::class.java)
-            Intent.putExtra("level", level)
-            startActivity(Intent)
-            finish()
+            if (input.equals(answer)){
+                val Intent = Intent(this, MainActivity2::class.java)
+                Intent.putExtra("level", level)
+                startActivity(Intent)
+                finish()
+            }
+
+            else{
+                val Intent = Intent(this, MainActivity1::class.java)
+                startActivity(Intent)
+                finish()
+            }
+
+
         }
     }
 }

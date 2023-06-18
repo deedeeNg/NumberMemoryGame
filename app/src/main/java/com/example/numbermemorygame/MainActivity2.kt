@@ -7,6 +7,7 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
+
 class MainActivity2 : AppCompatActivity() {
 
     private val handler: Handler = Handler()
@@ -29,6 +30,19 @@ class MainActivity2 : AppCompatActivity() {
 
         val progressBar = findViewById<ProgressBar>(R.id.progressBar)
 
+        //var difficulty = intent.getStringExtra("difficulty")
+
+        val pref = applicationContext.getSharedPreferences("MyPrefs", 0)
+        var difficulty = pref.getString("difficulty", "Medium");
+        var timer: Int = 200;
+
+        when (difficulty) {
+            "Easy" -> timer = 100
+            "Medium" -> timer = 50
+            "Hard" -> timer = 30
+        }
+
+
         Thread {
             while (progressStatus < 100) {
                 progressStatus += 1
@@ -39,13 +53,14 @@ class MainActivity2 : AppCompatActivity() {
                 })
                 try {
                     // Sleep for 100 milliseconds.
-                    Thread.sleep(50)
+                    Thread.sleep(timer.toLong())
                 } catch (e: InterruptedException) {
                     e.printStackTrace()
                 }
             }
             val Intent = Intent(this,MainActivity3::class.java)
             Intent.putExtra("answer", answer)
+
             startActivity(Intent)
             finish()
         }.start()
