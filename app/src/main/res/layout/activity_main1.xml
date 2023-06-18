@@ -17,8 +17,9 @@
         android:gravity="center"
         android:text="Number Memory Game"
         android:textSize="50dp"
-        android:textColor="#FA9884"
-        android:textStyle="bold"/>
+        android:textColor="#E74646"
+        android:textStyle="bold"
+        />
 
 
     <RadioGroup
@@ -67,8 +68,10 @@
         android:id="@+id/startbutton"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/roundbutton"
-        android:text="PLAY" />
+        android:backgroundTint="#FA9884"
+        android:text="Play"
+        android:textSize="20dp"
+        />
 
     <Button
         android:id="@+id/exitButton"

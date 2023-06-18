@@ -7,7 +7,7 @@
     tools:context=".MainActivity3"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#eeeeee"
+    android:background="#FFE5CA"
     >
 
     <EditText
@@ -23,7 +23,9 @@
     <Button
         android:id="@+id/button3"
         android:text="Next"
+        android:textSize="20dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FA9884"/>
 
 </LinearLayout>

@@ -6,12 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity4"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="#FFE5CA">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Your Answer"
+        android:textStyle="bold"
+        android:textColor="#0E2954"
+        android:textSize="20dp"
         />
 
     <TextView
@@ -19,6 +23,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="12345"
+        android:textSize="25dp"
+        android:textColor="#0E2954"
         android:layout_marginTop="10dp"
         />
 
@@ -26,6 +32,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Correct Answer"
+        android:textSize="20dp"
+        android:textColor="#22A699"
+        android:textStyle="bold"
         android:layout_marginTop="20dp"
         />
 
@@ -34,6 +43,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="12345"
+        android:textSize="25dp"
+        android:textColor="#22A699"
         android:layout_marginTop="10dp"
         />
 
@@ -41,6 +52,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Current Level"
+        android:textSize="20dp"
+        android:textColor="#1F6E8C"
+        android:textStyle="bold"
         android:layout_marginTop="30dp"
         />
 
@@ -49,6 +63,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="5"
+        android:textColor="#1F6E8C"
+        android:textSize="25dp"
         />
 
     <Button
@@ -57,5 +73,6 @@
         android:layout_height="wrap_content"
         android:text="PLAY AGAIN"
         android:layout_marginTop="50dp"
+        android:backgroundTint="#FA9884"
         />
 </LinearLayout>
