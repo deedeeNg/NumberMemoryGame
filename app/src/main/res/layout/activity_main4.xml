@@ -15,7 +15,7 @@
         />
 
     <TextView
-        android:id="@+id/playeranswer"
+        android:id="@+id/playerInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="12345"
@@ -30,7 +30,7 @@
         />
 
     <TextView
-        android:id="@+id/correctanswer"
+        android:id="@+id/correctAnswer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="12345"
@@ -45,13 +45,14 @@
         />
 
     <TextView
+        android:id ="@+id/levelText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="5"
         />
 
     <Button
-        android:id="@+id/playagain"
+        android:id="@+id/playAgain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="PLAY AGAIN"

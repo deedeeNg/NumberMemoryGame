@@ -39,7 +39,7 @@ class MainActivity2 : AppCompatActivity() {
                 })
                 try {
                     // Sleep for 100 milliseconds.
-                    Thread.sleep(100)
+                    Thread.sleep(50)
                 } catch (e: InterruptedException) {
                     e.printStackTrace()
                 }
