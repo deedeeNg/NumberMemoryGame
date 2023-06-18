@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/answer"
-        android:text="hahahahaha"
+        android:text="Number"
         android:textSize="30dp"
         android:textStyle="bold"
         android:textColor="#000"

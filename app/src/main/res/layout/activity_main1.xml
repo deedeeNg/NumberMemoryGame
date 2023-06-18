@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="170dp"
+        android:layout_marginBottom="100dp"
         android:gravity="center"
         android:text="Number Memory Game"
         android:textSize="50dp"
@@ -26,10 +26,9 @@
         android:id="@+id/radio_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#dbeceb"
         android:padding="15dp"
-        android:checkedButton="@+id/med">
-
+        android:checkedButton="@+id/med"
+        android:gravity="center">
 
         <TextView
             android:id="@+id/difficultyText"
@@ -37,7 +36,8 @@
             android:layout_height="wrap_content"
             android:text="Select Difficulty:"
             android:textStyle="bold"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:textAlignment="center"/>
 
         <RadioButton
             android:id="@+id/easy"
@@ -65,6 +65,7 @@
 
 
     <Button
+        android:layout_marginTop="20dp"
         android:id="@+id/startbutton"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
@@ -74,9 +75,12 @@
         />
 
     <Button
+        android:layout_marginTop="20dp"
         android:id="@+id/exitButton"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="Exit" />
+        android:backgroundTint="#FA9884"
+        android:text="Exit"
+        android:textSize="20dp" />
 
 </LinearLayout>
