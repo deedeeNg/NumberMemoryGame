@@ -1,5 +1,6 @@
 package com.example.numbermemorygame
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.widget.ProgressBar
@@ -14,7 +15,7 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
-        var level = 10
+        var level = intent.getIntExtra("level", 1)
         var answer = ""
         var progressStatus = 0
 
@@ -37,12 +38,16 @@ class MainActivity2 : AppCompatActivity() {
                     progressBar.progress = progressStatus
                 })
                 try {
-                    // Sleep for 200 milliseconds.
+                    // Sleep for 100 milliseconds.
                     Thread.sleep(100)
                 } catch (e: InterruptedException) {
                     e.printStackTrace()
                 }
             }
+            val Intent = Intent(this,MainActivity3::class.java)
+            Intent.putExtra("answer", answer)
+            startActivity(Intent)
+            finish()
         }.start()
 
     }
